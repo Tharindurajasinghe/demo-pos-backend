@@ -71,7 +71,7 @@ const addProduct = async (req, res) => {
     }
     
     // Verify category exists
-    const Category = require('../models/category');
+    const Category = require('../models/Category');
     const category = await Category.findOne({ categoryId });
     if (!category) {
       return res.status(400).json({ message: 'Category not found' });
@@ -105,7 +105,7 @@ const updateProduct = async (req, res) => {
     }
     
     if (categoryId) {
-      const Category = require('../models/category');
+      const Category = require('../models/Category');
       const category = await Category.findOne({ categoryId });
       if (!category) {
         return res.status(400).json({ message: 'Category not found' });

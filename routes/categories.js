@@ -8,7 +8,7 @@ const {
   updateCategory,
   deleteCategory,
   getProductsByCategory
-} = require('../controllers/CategoryController');
+} = require('../controllers/categoryController');
 
 // All routes need authentication
 router.use(authenticateToken);
