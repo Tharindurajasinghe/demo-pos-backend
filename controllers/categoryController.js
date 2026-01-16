@@ -1,4 +1,4 @@
-const Category = require('../models/category');
+const Category = require('../models/Category');
 const Product = require('../models/Product');
 
 // Generate next category ID
