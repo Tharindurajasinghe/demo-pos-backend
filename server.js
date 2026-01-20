@@ -27,6 +27,8 @@ app.use('/api/bills', require('./routes/bills'));
 app.use('/api/summary', require('./routes/summary'));
 app.use('/api/day', require('./routes/day'));
 app.use('/api/categories', require('./routes/categories'));
+app.use('/api/invoices', require('./routes/invoices'));
+app.use('/api/cheques', require('./routes/cheques'));
 
 
 
